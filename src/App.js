@@ -18,7 +18,7 @@ function App() {
 
     try {
       // Fetch JSON data from /scrape endpoint
-      const jsonResponse = await axios.get(`http://localhost:8000/scrape`, {
+      const jsonResponse = await axios.get(`https://b9c2-2401-4900-881a-9d22-f833-e37-4437-4e9e.ngrok-free.app/scrape`, {
         params: { username, max_reels: maxReels },
       });
       setReels(jsonResponse.data);
